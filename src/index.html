@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Discord Account bot</title>
+		<link rel="stylesheet" href="normalizer.css" />
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<h1>Discord Account bot</h1>
+		<form id="botform">
+			<label for="token">Discord token:</label><br />
+			<input
+				type="text"
+				id="token"
+				name="token"
+				placeholder="Your Discord token"
+			/>
+
+			<div class="row">
+				<div>
+					<label for="activityType">Discord activity:</label><br />
+					<select name="activityType" id="activityType">
+						<option value="0">is playing</option>
+						<option value="1">is streaming</option>
+						<option value="2">is listening</option>
+						<option value="3">is watching</option>
+						<option value="5">is competing in</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="status">Discord status:</label><br />
+					<input
+						type="text"
+						id="status"
+						name="status"
+						placeholder="Ex. Minecraft"
+					/>
+				</div>
+			</div>
+			<input id="start" type="submit" value="Submit" />
+		</form>
+		<hr />
+
+		<form id="scheduleform">
+			<div>
+				<label>Schedule Message:</label><br />
+				<div class="row">
+					<input type="text" id="channelID" placeholder="Channel ID" />
+					<input type="text" id="cronTime" placeholder="Cron time" />
+				</div>
+				<textarea
+					class="mt-0"
+					type="text"
+					id="msg"
+					name="msg"
+					placeholder="Message"
+					rows="4"
+					cols="50"
+				></textarea>
+			</div>
+
+			<input id="schedule" type="submit" value="Schedule Message" />
+		</form>
+
+		<div id="scheduled-messages"></div>
+
+		<script src="utils.js"></script>
+		<script src="lib/Account.js"></script>
+		<script src="lib/ScheduledMessage.js"></script>
+		<script src="lib/App.js"></script>
+		<script src="renderer.js"></script>
+	</body>
+</html>

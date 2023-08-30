@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+	margin: auto;
+	max-width: 38rem;
+	padding: 1rem;
+	font-family: "Roboto", sans-serif;
+	background-color: #424549;
+	color: #f2f3f5;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+input,
+select,
+textarea {
+	margin: 0.5rem 0;
+	padding: 0.5rem;
+	width: 100%;
+	background-color: #1e1f22;
+	color: #dbdee1;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	box-sizing: border-box;
+}
+
+input[type="submit"] {
+	background-color: #3d63ea;
+	cursor: pointer;
+	margin-top: 0px;
+}
+
+input[type="submit"]:hover {
+	background-color: #2248d0;
+}
+
+.row {
+	display: flex;
+	white-space: nowrap;
+	align-items: center;
+	gap: 10px;
+}
+
+.row > * {
+	flex: 1;
+}
+
+.mt-0 {
+	margin-top: 0;
+}
+
+hr {
+	border: none;
+	border-top: 2px solid rgb(51, 51, 51);
+}
+
+.msg-container {
+	position: relative;
+	background-color: #36393e;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 0.5rem 0;
+}
+
+.msg-info {
+	padding: 0.2rem;
+}
+
+.trash-icon {
+	position: absolute;
+	right: 7px;
+	top: 7px;
+	cursor: pointer;
+	height: 20px;
+}
+
+.color-blue {
+	color: #9a9fff;
+}
+
+.color-yellow {
+	color: #fff36d;
+}
+
+.color-purple {
+	color: #f36cff;
+}
+
+a {
+	color: #00a8fc;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
